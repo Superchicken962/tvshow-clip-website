@@ -1,0 +1,61 @@
+body {
+    margin: 2rem;
+}
+
+.buttons {
+    display: block;
+    margin: auto;
+    width: 100%;
+    float: left;
+}
+
+@media screen and (min-width: 800px) {
+    .buttons {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .buttons {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 2200px) {
+    .buttons {
+        width: 30%;
+    }
+}
+
+.buttons .item {
+    display: block;
+    margin: auto;
+    position: relative;
+    background-color: rgb(47, 47, 47);
+    height: fit-content;
+    text-align: left;
+    padding: 8px 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    /* transition: 0.15s ease-in-out box-shadow, 0.15s ease-in-out background-color; */
+}
+.buttons .item #title {
+    font-size: 20px;
+}
+.buttons .item:hover {
+    box-shadow: 0 0 10px aqua;
+    background-color: rgba(0, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.buttons .item #icon {
+    display: block;
+    margin: auto;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top:0;bottom:0;
+    font-size: 20px;
+    right: 25px;
+}
