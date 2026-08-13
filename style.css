@@ -43,7 +43,7 @@ body {
 .buttons .item #title {
     font-size: 20px;
 }
-.buttons .item:hover {
+.buttons .item:not(.disabled):hover {
     box-shadow: 0 0 10px aqua;
     background-color: rgba(0, 255, 255, 0.2);
     cursor: pointer;
@@ -58,4 +58,9 @@ body {
     top:0;bottom:0;
     font-size: 20px;
     right: 25px;
+}
+
+.buttons .item.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
